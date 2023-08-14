@@ -1,0 +1,618 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-family: 'Inter', sans-serif;
+}
+
+.logo {
+    width: 50%;
+    
+}
+
+body {
+    background-color: #f1f6fc31;
+    
+}
+
+section, footer {
+    padding: 54px 0 ;
+}
+
+h3 {
+    font-size:50px;
+}
+
+/* mudança */
+p {
+    color: #0000009c;
+    border-right: 2px solid rgba(255, 255, 255, 0.75);
+    
+}
+
+.typing-animation {
+    animation: blinkCursor 500ms  infinite normal, typing 2s  0.3s normal;
+    overflow: hidden;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 18em;
+    }
+}
+
+@keyframes blinkCursor {
+    from {
+        border-right-color: rgba(255,255,255.75)
+    }
+    to {
+        border-right-color: transparent;
+    }
+}
+
+/* mudança */
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 5%;
+    
+}
+
+.btn {
+    background-color: rgb(201, 200, 200);
+    color: white;
+    padding: 15px 20px;
+    border-radius: 100px;
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.btn.animate-btn {
+    animation: animate-outline 1s ease-out infinite;
+}
+
+.btn:hover {
+    background-color: rgb(95, 92, 92);
+}
+
+@keyframes animate-outline {
+    from{
+        outline: 3px solid rgba(255, 255, 255, 0.377);
+    }
+    to{
+        outline: 7px solid rgba(128, 128, 128, 0.459);
+    }
+}
+
+
+header {
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+nav ul {
+    display:flex;
+    align-items: center;
+}
+
+nav ul a {
+    color: white;
+    margin: 0 25px;
+    text-transform: uppercase;
+    font-size: 14px;
+    display: block;
+}
+
+nav ul a:not(.btn):after{
+    content: "";
+    background-color: white;
+    height: 3px;
+    width: 0%;
+    display: block;
+    margin: 0 auto;
+    transition: 0.3s;
+}
+
+nav ul a:hover::after {
+    width: 100%;
+}
+
+/* menu-mobile */
+
+nav .menu-icon{
+
+    cursor: pointer;
+    font-size: 25px;
+    display: none;
+}
+
+nav .close-icon {
+    display: none;
+    font-size: 30px;
+    color: white;
+
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+}
+
+.banner .banner-text {
+    margin: 150px;
+    text-align: center;
+    padding: 0 90px;
+}
+
+.banner .banner-text h1{
+    font-size: 96px;
+    color: white;
+}
+
+.banner .banner-text p{
+    font-size: 20px;
+    color: rgba(29, 29, 29, 0.712);
+    font-weight: lighter;
+    margin: 18px 0 ;
+
+}
+
+
+/*More Information*/
+.more-information .container{
+    display: flex;
+    align-items: center;
+    
+
+}
+
+.more-information .more-information-text{
+
+    width:50%;
+    padding: 0 40px;
+}
+
+.more-information .more-information-text h3{
+    font-size: 56px;
+}
+
+.more-information .more-information-text p{
+    margin: 5px 0 10px 0; 
+}
+
+.more-information .more-information-img{
+    width: 50%;
+}
+
+.more-information .more-information-img img{
+    width: 100%;
+}
+
+.gif {
+    border-radius: 100%;
+}
+
+/* Glória a Deus! HIHI */
+
+
+/* Comment of Clint == Feedback Cards */
+
+.feedback-cards h3 {
+    text-align: center;
+}
+
+.feedback-cards p{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.feedback-cards {
+    background-color:  rgba(116, 111, 111, 0.781); 
+}
+
+/* Client Cards */
+
+.client-cards h3 {
+    text-align: center;
+}
+
+.client-cards p{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.client-cards {
+    background-color:  rgba(116, 111, 111, 0.781); 
+}
+
+
+/* Profile Cards */
+
+.profile-cards h3 {
+    text-align: center;
+}
+
+.profile-cards p{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.profile-cards {
+    background-color:  rgba(116, 111, 111, 0.781); 
+}
+
+.ifreme {
+    border-radius: 10%;
+}
+.ifreme01 {
+    text-align: center;
+}
+
+/* Começo missão & Valores */
+
+.about-flipe{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 'Outfit', sans-serif;
+
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    background-image: linear-gradient(45deg,#eeeeee, #ffffffff);
+}
+
+.flip-container {
+    position: relative;
+    width: 350px;
+    height: 550px;
+    
+}
+
+.flip-container:hover .flip{
+    transform: rotateY(180deg);
+}
+
+.flip {
+    position: absolute;
+     width: 100%;
+     height: 100%;
+     cursor: pointer;
+     transform-style: preserve-3d;
+     transition: .5s;
+}
+
+.frente, .tras {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px #0000001b;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+}
+
+.frente {
+    background-image: url(assets/banner\ 2.0.jpg);
+    background-size: cover;
+}
+
+.tras {
+    background-image: url(https://img.freepik.com/fotos-premium/planejamento-de-missao-de-negocios-e-conceito-de-objetivo-com-escada-cinza-e-alvo-vermelho-e-branco-na-renderizacao-3d-de-fundo-de-parede-de-luz-abstrata_670147-28357.jpg);
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: white;
+}
+/* Final Missão & Valores Card */
+
+/* Inicio Card minimista Profile */
+
+.section-profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: center ;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container-p {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    flex-wrap:wrap;
+    z-index: 1;
+}
+
+.container-p .card-p {
+
+    position: relative;
+    width: 280px;
+    height: 400px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255  , 0.1);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(2px);
+
+}
+
+.container-p .card-p .content-p{
+    padding: 20px;
+    text-align: center;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.container-p .card-p:hover .content-p{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.container-p .card-p .content-p h2 {
+    position: absolute;
+    top: -80px;
+    right: 30px;
+    font-size: 8em;
+    color: rgba(255, 255, 255, 0.05);
+    pointer-events: none;
+    
+
+}
+
+.container-p .card-p .content-p h3 {
+    font-size: 1.8em;
+    color: #fff;
+    z-index: 1;
+}
+
+.container-p .card-p .content-p p {
+    font-size: 1em;
+    color: #fff;
+    font-weight: 300;
+}
+
+.container-p .card-p .content-p a {
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    margin-top: 15px;
+    background: #fff;
+    color: #000;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: 500;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2    );
+
+}
+
+/* End do Card Profile */
+
+
+
+/* Fim card minimalista profile */
+
+
+/*   Página ((( Sobre )))   */
+.about .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    
+}
+
+.about .about-test{
+    width: 50%;
+    padding-right: 40px;
+}
+
+.about .about-text p{
+
+    margin: 18px 0;
+    color: gray;     
+}
+
+.about .about-img{
+    width: 50%;
+}
+
+.about .about-img img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+.contact-info{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+
+}
+
+.contact-info .left-side{
+    width: 50%;
+    padding: 30px;
+    background-color: rgb(179, 174, 174);
+    border-radius: 14px;
+    margin-right: 50px;
+    height: fit-content;
+}
+
+.contact-info .left-side div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact-info .left-side div i{
+    font-size: 24px;
+    margin-right: 20px;
+    color: white;
+}
+
+.contact-info .left-side p{
+
+    font-size: 17px;
+    color: white;
+}
+
+.contact-info .right-side {
+    width: 50%;
+}
+
+.contact-info .right-side input{
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    height: 47px;
+    padding: 15px;
+    border-radius: 9px;
+    transition: 0.3s;
+    border: 1px solid gray;
+    color: black;
+    font-weight: lighter;
+}
+
+ .contact-info .right-side input:focus,
+ .contact-info .right-side textarea:focus{
+    border-color:blue;
+ }
+
+ .contact-info .right-side textarea{
+    border: 1px solid #f1f1f1;
+    color: #212121;
+    border-radius: 9px;
+    margin-bottom: 10px;
+    padding: 15px;
+    width: 100%;
+    transition: 0.3s;
+    resize: none;
+ }
+
+ .contact-info .right-side button{
+    border: none;
+ }
+
+
+
+
+@media(max-width:830px) {
+    .ul{
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-image: url(assets/anima.gif);
+        width: 100%;
+        height: 100%;
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
+        clip-path: polygon(51% 54%, 100% 0%, 51% 54%, 0% 100%);
+        transition: 0.7s;
+    }
+
+    .ul.open{
+        clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    }
+
+    .ul a {
+        margin: 10px 0;
+        font-size: 16px;
+    }
+    nav .menu-icon {
+        display: block;
+        
+    }
+    nav .close-icon{
+        display: block;
+        position: absolute;
+        top: 46px;
+        right: 28px;
+    }
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+}
+
+/* Client */
+.client h3,
+.client p{
+    text-align: center;
+}
+
+.client .container div {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 30px;
+
+}
+
+/* End Client */
+
+.footer {
+    background-color: black;
+    text-align: center;
+    
+}
+
+.footer i{
+
+    color: black;
+    font-size: 19px;
+    background-color: white ;
+    padding: 10px;
+    margin: 3px;
+    border-radius: 10px ;
+
+}
+
+.footer p{
+    margin-top: 15px;
+    color: white;
+}
+
+.contact {
+    background-color: white;
+}
+
